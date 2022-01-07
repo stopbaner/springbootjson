@@ -24,7 +24,7 @@ import java.io.IOException;
  * @date 2022/1/2 18:07
  */
 @Slf4j
-@Configuration
+//@Configuration
 //@JsonComponent //同样的效果
 public class MyJsonMapper {
     @Bean
