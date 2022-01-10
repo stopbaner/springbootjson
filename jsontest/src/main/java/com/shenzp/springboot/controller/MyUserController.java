@@ -14,6 +14,7 @@ public class MyUserController {
         MyUser myUser=new MyUser();
         myUser.setName("null");
         myUser.setAge(null);
+        myUser.setGender("1");
         return myUser;
     }
 
