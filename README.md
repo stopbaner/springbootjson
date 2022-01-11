@@ -15,3 +15,13 @@
 
 7. json中date格式的转换--@JsonFormat注解设置
 
+
+
+
+### 全局异常处理
+
+---
+1. controller层可以使用@ResControllerAdvice的方式实现对于controller层异常的捕获
+
+2. 自定义实现类实现BasicErrorController，可以处理filter中的异常
+
