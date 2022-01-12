@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.servlet.*;
 import java.io.IOException;
 
-@Configuration
+//@Configuration
 public class MyExceptionFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
