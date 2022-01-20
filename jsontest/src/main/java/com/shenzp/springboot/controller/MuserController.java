@@ -1,5 +1,6 @@
 package com.shenzp.springboot.controller;
 
+import com.shenzp.springboot.config.MyException;
 import com.shenzp.springboot.domain.Muser;
 import com.shenzp.springboot.domain.User;
 import lombok.extern.slf4j.Slf4j;
@@ -32,5 +33,10 @@ public class MuserController {
     @GetMapping("/jsonuser")
     public ResponseEntity<User> showUser() {
         return ResponseEntity.ok(User.buildOne());
+    }
+
+    @GetMapping("/testUser")
+    public void testUser() {
+        throw new MyException("myException");
     }
 }
