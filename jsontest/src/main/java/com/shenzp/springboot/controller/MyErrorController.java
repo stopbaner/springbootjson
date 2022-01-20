@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 //全局处理filter自定义异常
-@RestController
+//@RestController
 public class MyErrorController extends BasicErrorController {
 
     public MyErrorController() {

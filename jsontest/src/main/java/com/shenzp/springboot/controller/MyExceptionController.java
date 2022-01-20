@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@RestControllerAdvice //处理controller中的自定义异常
+//@RestControllerAdvice //处理controller中的自定义异常
 @RequestMapping("/")
 public class MyExceptionController {
 

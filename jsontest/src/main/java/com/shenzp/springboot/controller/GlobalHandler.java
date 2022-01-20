@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 全局日期处理
  */
-@ControllerAdvice
+//@ControllerAdvice
 public class GlobalHandler {
 
     private static String[] patterns = {
