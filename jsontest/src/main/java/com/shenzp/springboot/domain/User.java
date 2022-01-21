@@ -41,7 +41,7 @@ public class User {
 
     @Length(min = 1, max = 10, message = "名字长度1-10")
     //@NotNull(message = "姓名不能为空")
-    private String name;
+    private String name="";
 
     @Min(value = 0, message = "不能小于0岁")
     @Max(value = 150, message = "不能超过150岁")
