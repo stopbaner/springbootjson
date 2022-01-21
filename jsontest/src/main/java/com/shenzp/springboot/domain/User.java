@@ -3,8 +3,12 @@ package com.shenzp.springboot.domain;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.validator.constraints.Length;
 
 import javax.annotation.PostConstruct;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -33,10 +37,15 @@ import java.util.Random;
 @Slf4j
 @Data
 public class User {
+    private Integer id;
 
+    @Length(min = 1, max = 10, message = "名字长度1-10")
+    //@NotNull(message = "姓名不能为空")
     private String name;
 
-    private Integer age;
+    @Min(value = 0, message = "不能小于0岁")
+    @Max(value = 150, message = "不能超过150岁")
+    private Integer age=-1;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private LocalDateTime birthday;
