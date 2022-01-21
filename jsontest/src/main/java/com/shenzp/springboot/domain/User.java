@@ -48,8 +48,14 @@ public class User {
 
     private Calendar firstWorkDate;
 
+    private Double salary;
+
     public User() {
 
+    }
+
+    public User(Double salary) {
+        this.salary = salary;
     }
 
     public static User buildOne() {
