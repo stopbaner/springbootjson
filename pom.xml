@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>jsontest</module>
+        <module>springbootquartz</module>
     </modules>
     <name>jsondemo</name>
     <description>Demo project for Spring Boot</description>
