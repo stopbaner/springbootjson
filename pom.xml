@@ -9,6 +9,7 @@
     <modules>
         <module>jsontest</module>
         <module>springbootquartz</module>
+        <module>reflecttest</module>
     </modules>
     <name>jsondemo</name>
     <description>Demo project for Spring Boot</description>
