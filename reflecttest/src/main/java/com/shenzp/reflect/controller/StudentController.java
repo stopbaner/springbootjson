@@ -33,6 +33,11 @@ public class StudentController {
                 System.out.println(integerField);
             }
 
+            if(declaredField.getGenericType().toString().equals("class java.lang.String")){
+                String stringField = (String)getMethod.invoke(student);
+                System.out.println(stringField);
+            }
+
         }
 
     }
