@@ -103,5 +103,6 @@ public class ExcelPOITest {
         Row row1 = table1.getRow(0);
         Cell cell1 = row1.getCell(0);
         log.info(cell1.getStringCellValue());
+        fileInputStream.close();
     }
 }
