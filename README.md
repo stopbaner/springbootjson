@@ -18,7 +18,6 @@
 
 
 
-
 ### 全局异常处理
 
 ---
@@ -95,6 +94,23 @@ public class A {
 @Autowired
 private A a;
 }
+
+
+### juc
+
+---
+java.util.concurrent包下解决高并发问题的类
+
+1. wait与sleep的区别
+- wait来自object类，sleep来自线程类
+- wait释放锁，sleep不会释放锁
+- wait需要在同步代码块中，sleep可以在任何地方
+- wait不需要捕获异常，sleep需要
+
+2. runnable与callable的区别
+   -runnable没有返回值，callable有返回值
+
+
 
 
 
