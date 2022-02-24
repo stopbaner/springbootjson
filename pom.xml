@@ -11,6 +11,7 @@
         <module>springbootquartz</module>
         <module>reflecttest</module>
         <module>exceltest</module>
+        <module>redistest</module>
     </modules>
     <name>jsondemo</name>
     <description>Demo project for Spring Boot</description>
@@ -35,17 +36,17 @@
         </dependency>
 
         <!--   poi组件     -->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi</artifactId>-->
-<!--            <version>3.17</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.poi</groupId>-->
+        <!--            <artifactId>poi</artifactId>-->
+        <!--            <version>3.17</version>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>3.17</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.poi</groupId>-->
+        <!--            <artifactId>poi-ooxml</artifactId>-->
+        <!--            <version>3.17</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -78,6 +79,7 @@
             <version>3.7</version>
         </dependency>
 
+        <!--   验证框架     -->
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
@@ -90,10 +92,30 @@
             <version>6.0.18.Final</version>
         </dependency>
 
+        <!--   任务调度框架quartz     -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
+
+        <!--   redisTemplate使用     -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
