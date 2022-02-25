@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,9 +28,7 @@ public class RedisTest {
         map.put("three","3");
         redisUtil.set("map",map);
         HashMap map1 = (HashMap) redisUtil.get("map");
-        for (Object o : map1.entrySet()) {
-            System.out.println(o);
-        }
+        map1.forEach((k,v)-> System.out.println("key:"+k+" value:"+v));
 
         redisUtil.set("name","jack");
         System.out.println(redisUtil.get("name"));
