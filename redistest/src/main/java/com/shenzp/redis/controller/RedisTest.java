@@ -5,6 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @Description:
  * @Author: shenzp
@@ -19,6 +23,16 @@ public class RedisTest {
 
     @RequestMapping("/testRedis")
     public void testRedis() {
+        Map map=new HashMap<String,Object>();
+        map.put("one","1");
+        map.put("two",2);
+        map.put("three","3");
+        redisUtil.set("map",map);
+        HashMap map1 = (HashMap) redisUtil.get("map");
+        for (Object o : map1.entrySet()) {
+            System.out.println(o);
+        }
+
         redisUtil.set("name","jack");
         System.out.println(redisUtil.get("name"));
     }
