@@ -110,7 +110,13 @@ java.util.concurrent包下解决高并发问题的类
 2. runnable与callable的区别
    -runnable没有返回值，callable有返回值
 
-   
+
+
+### spring缓存
+
+---
+
+Spring中的一级缓存名为singletonObjects，二级缓存名为earlySingletonObjects，三级缓存名为singletonFactories，除了一级缓存是ConcurrentHashMap之外，二级缓存和三级缓存都是HashMap。
 
 
 
